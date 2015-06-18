@@ -8,6 +8,7 @@ require 'rtf/information'
 require 'rtf/paper'
 require 'rtf/node'
 require 'rtf/list'
+require 'rtf/converters'
 
 # This module encapsulates all the classes and definitions relating to the RTF
 # library.
