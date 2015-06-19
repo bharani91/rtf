@@ -1834,7 +1834,7 @@ module RTF
          text << "{#{prefix}\\#{@character_set.id2name}"
          text << "\\deff#{@default_font}"
          text << "\\deflang#{@language}" if !@language.nil?
-         text << "\\plain\\fs24\\fet1"
+         text << "\\plain\\fs20\\fet1"
          text << "\n#{@fonts.to_rtf}"
          text << "\n#{@colours.to_rtf}" if @colours.size > 0
          text << "\n#{@information.to_rtf}"

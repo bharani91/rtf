@@ -48,7 +48,7 @@ module RTF::Converters
 
       def font(key)
         RTF::Font.new(*case key
-          when :default   then [RTF::Font::ROMAN,  'Times New Roman']
+          when :default   then [RTF::Font::ROMAN,  'Helvetica']
           when :monospace then [RTF::Font::MODERN, 'Courier New'    ]
         end)
       end

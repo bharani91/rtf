@@ -44,7 +44,7 @@ begin
    document.header = header
 
    # Write the document to a file.
-   File.open('example04.rtf', 'w') {|file| file.write(document.to_rtf)}
+   File.open('example04.doc', 'w') {|file| file.write(document.to_rtf)}
 rescue => error
    puts "ERROR: #{error.message}"
    error.backtrace.each {|step| puts "   #{step}"}
