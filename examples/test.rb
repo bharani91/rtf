@@ -55,5 +55,5 @@ EOF
 
 converter = Converters::HTML.new(html)
 File.open('example01.rtf', 'w') do |file|
-   file.write(converter.to_rtf)
+   file.write(converter.to_rtf(font: :serif))
 end

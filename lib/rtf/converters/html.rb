@@ -14,6 +14,7 @@ module RTF::Converters
     end
 
     def to_rtf_document(options = {})
+      puts options[:font]
       font  = Helpers.font(options[:font] || :default)
       nodes = NodeSet.new @html.css('body').children
 
@@ -49,7 +50,8 @@ module RTF::Converters
       def font(key)
         RTF::Font.new(*case key
           when :default   then [RTF::Font::SWISS,  'Helvetica']
-          when :monospace then [RTF::Font::MODERN, 'Courier New'    ]
+          when :monospace then [RTF::Font::MODERN, 'Courier New']
+          when :serif then [RTF::Font::MODERN, 'GEORGIA']
         end)
       end
 
