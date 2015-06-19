@@ -27,7 +27,7 @@ module RTF::Converters
         defaults = {
           :doctype          => 'omit',
           :bare             => true,
-          :clean            => true,
+          # :clean            => true,
           :drop_empty_paras => true,
           :logical_emphasis => true,
           :lower_literals   => true,
@@ -92,7 +92,7 @@ module RTF::Converters
 
       def to_rtf(rtf)
         case @node.name
-        when 'text'                   then rtf << @node.text.gsub(/\n+/, ' ').strip
+        when 'text'                   then rtf << @node.text.gsub(/\n+/, '')
         when 'br'                     then rtf.line_break
         when 'b', 'strong'            then rtf.bold &recurse
         when 'i', 'em', 'cite'        then rtf.italic &recurse
