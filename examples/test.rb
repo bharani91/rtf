@@ -36,14 +36,14 @@ html = <<-EOF
             <ul>
                 <li>lorem</li>
                 <li>lorem</li>
-                <li>lorem</li>
+                <li>lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nulla ducimus, officiis architecto eius repellendus magni quisquam velit, quidem commodi impedit assumenda earum atque dicta, nemo nihil eligendi deleniti aliquid.</li>
                 <li><strong>lorem</strong></li>
             </ul>
 
              <ol>
                 <li>lorem</li>
                 <li>lorem</li>
-                <li>lorem</li>
+                <li>lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos pariatur labore facere incidunt saepe, accusantium quos laudantium itaque enim nulla ipsam, dolor atque ipsa cum deleniti libero excepturi delectus vero!</li>
                 <li><strong>lorem</strong></li>
             </ol>
         </p>

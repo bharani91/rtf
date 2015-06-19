@@ -183,7 +183,7 @@ module RTF
     end
 
     def indent
-      @indent ||= level * 720
+      @indent ||= level * 220
     end
 
     def to_rtf(indent=0)
